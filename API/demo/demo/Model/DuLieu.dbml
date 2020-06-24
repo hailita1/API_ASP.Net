@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DuLieu" Class="DuLieuDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-63KBH0E\SQLEXPRESS;Initial Catalog=DuLieu;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DuLieuConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblCongViec" Member="tblCongViecs">
+    <Type Name="tblCongViec">
+      <Column Name="MaCongViec" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenCongViec" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tblCongViec_tblNhanVien" Member="tblNhanViens" ThisKey="MaCongViec" OtherKey="CongViec" Type="tblNhanVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblNhanVien" Member="tblNhanViens">
+    <Type Name="tblNhanVien">
+      <Column Name="MaNhanVien" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CongViec" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblCongViec_tblNhanVien" Member="tblCongViec" ThisKey="CongViec" OtherKey="MaCongViec" Type="tblCongViec" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

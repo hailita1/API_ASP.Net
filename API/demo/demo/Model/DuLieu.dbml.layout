@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DuLieu">
+  <DataContextMoniker Name="/DuLieuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e8d809d2-6b09-4f69-a41b-fb1fa9a872ff" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DuLieuDataContext/tblCongViec" />
+      <nestedChildShapes>
+        <elementListCompartment Id="883aa46a-d66e-41d7-a5f6-bdac2cead152" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e357822a-79f3-41f6-a96b-ebfaf4a9fd0e" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DuLieuDataContext/tblNhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e6d6f88-6c5d-40ed-b639-81935d252c9f" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DuLieuDataContext/tblCongViec/tblCongViec_tblNhanVien" />
+      <nodes>
+        <classShapeMoniker Id="e8d809d2-6b09-4f69-a41b-fb1fa9a872ff" />
+        <classShapeMoniker Id="e357822a-79f3-41f6-a96b-ebfaf4a9fd0e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
